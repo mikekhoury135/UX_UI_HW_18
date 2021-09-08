@@ -43,6 +43,42 @@
     height: auto;
     border-radius: 10%;
 }
+.resume-header {
+    display: flex;
+    justify-content: center;
+}
+.resume-skills {
+    margin: 0 auto;
+    max-width: 800px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.skills-header {
+    text-align: center;
+}
+.tech-skills {
+    margin: 0 auto;
+}
+.ux-ui-skills {
+    margin: 0 auto;
+}
+.other-skills {
+    margin: 0 auto;
+}
+.mhs {
+    text-align: center;
+}
+.mhs-mockup-container {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.mhs-img {
+    max-width: 100%;
+    height: auto;
+}
 .footer {
     display: flex;
     flex-direction: column;
@@ -50,9 +86,6 @@
     margin: 15px auto;
     max-width: 1200px;
     text-align: center;
-}
-.social-links {
-    
 }
 .social-img {
     margin: 10px 20px 10px 20px;
@@ -64,4 +97,19 @@
     color: #FFFFFF;
     background-color: black;
     margin: 50px 0 0 0;
+}
+@media only screen and (max-width: 638px) {
+.resume-skills {
+    margin: 0 auto;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+}
+.mhs-mockup-container {
+    display: grid;
+    grid-template-rows: auto auto;
+}
+
 }
